@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  微内涵
+//
+//  Created by MAC22 on 15/10/24.
+//  Copyright (c) 2015年 huiwenjiaoyu. All rights reserved.
+//
+
+#ifndef ____PrefixHeader_pch
+#define ____PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHieght [UIScreen mainScreen].bounds.size.height
+
+//.h文件的导入
+#import "AFNateWorking.h"
+#import "MJRefresh.h"
+
+
+//视频页面接口
+//http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_videos&page=0&page_size=30&max_timestamp=-1&vip=1&platform=iphone&appver=1.6&udid=348293AF-1C93-4232-8B4D-CBA409EA4F28
+#define SHIPING_URL @"http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_videos&page=%ld&page_size=15&max_timestamp=%@&vip=1&platform=0&appver=0&udid=0"
+
+//内涵图片界面接口
+//http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_pics&page=0&page_size=30&max_timestamp=-1&vip=1&platform=iphone&appver=1.6&udid=348293AF-1C93-4232-8B4D-CBA409EA4F28
+#define QUTU_URL @"http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_pics&page=%ld&page_size=15&max_timestamp=%@&vip=1&platform=0&appver=0&udid=0"
+
+//壁纸界面
+#define WallPager @"http://api.ipadown.com/pic/pic.api.php?page=%ld&count=6&category=0&orderby=rand&device=iPhone"
+
+
+//内涵段子界面接口
+//http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_jokes&page=0&page_size=30&max_timestamp=-1&vip=1&platform=iphone&appver=1.6&udid=348293AF-1C93-4232-8B4D-CBA409EA4F28
+#define Performance_URL @"http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_jokes&page=%ld&page_size=15&max_timestamp=%@&vip=1&platform=0&appver=0&udid=0"
+
+#endif
